@@ -13,12 +13,11 @@ const leaderSchema = new Schema({
     },
     designation: {
         type: String,
-        default: ''
+        required: true
     },
     abbr: {
         type: String,
-        required: true,
-        default: ''
+        required: true
     },
     description: {
         type: String,
