@@ -39,7 +39,7 @@ exports.jwtPassport = passport.use(new JwtStrategy(opts,
     }));
 
 exports.verifyUser = passport.authenticate('jwt', {session: false});
-exports.verifyAdmin = (req, res, next) => {
+exports.verifyAdmin = (req,res, next) => {
     User.findOne({_id: req.user._id})       //validate ordinary user
     .then((user) => {               
         if (user.admin) {           //check for admin user
