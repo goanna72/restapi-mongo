@@ -22,7 +22,7 @@ var leaderRouter = require('./routes/leaderRouter');
 const uploadRouter = require('./routes/uploadRouter');
 
 var favoriteRouter = require('./routes/favoriteRouter');
-
+var commentRouter = require('./routes/commentRouter');
 
 const Dishes = require('./models/dishes');
 
@@ -70,7 +70,7 @@ app.use('/leaders', leaderRouter);
 app.use('/imageUpload',uploadRouter);
 
 app.use('/favorite', favoriteRouter);
-
+app.use('/comments',commentRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
