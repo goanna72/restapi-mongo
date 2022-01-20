@@ -69,7 +69,7 @@ app.use('/promotions', promoRouter);
 app.use('/leaders', leaderRouter);
 app.use('/imageUpload',uploadRouter);
 
-app.use('/favorite', favoriteRouter);
+app.use('/favorites', favoriteRouter);
 app.use('/comments',commentRouter);
 
 // catch 404 and forward to error handler
